@@ -1,0 +1,27 @@
+@import "../variables";
+
+.about {
+    position: relative;
+    width: 100%;
+    top: 200px;
+    padding: 0 0 50px 0;
+    @include md-devices {
+        top: 140px;
+    }
+    @include sm-devices {
+        top: 140px;
+    }
+
+    &__top_content {
+        width: 100%;
+        position: relative;
+
+        div {
+            text-align: center;
+            font-family: $font-secondary;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

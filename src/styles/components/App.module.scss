@@ -1,0 +1,10 @@
+@import "../variables";
+
+.App {
+  text-align: center;
+  background: $bg-main-color;
+  color: $color-black;
+  font-family: $font-main;
+  height: 100%;
+  width: 100%;
+}
