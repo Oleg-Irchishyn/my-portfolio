@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Oleg-Irchishyn/my-portfolio/static/css/main.bc15c329.chunk.css",
+    "main.js": "/Oleg-Irchishyn/my-portfolio/static/js/main.8979bf09.chunk.js",
+    "main.js.map": "/Oleg-Irchishyn/my-portfolio/static/js/main.8979bf09.chunk.js.map",
+    "runtime-main.js": "/Oleg-Irchishyn/my-portfolio/static/js/runtime-main.4b942c94.js",
+    "runtime-main.js.map": "/Oleg-Irchishyn/my-portfolio/static/js/runtime-main.4b942c94.js.map",
+    "static/css/2.2d0886aa.chunk.css": "/Oleg-Irchishyn/my-portfolio/static/css/2.2d0886aa.chunk.css",
+    "static/js/2.9153de5e.chunk.js": "/Oleg-Irchishyn/my-portfolio/static/js/2.9153de5e.chunk.js",
+    "static/js/2.9153de5e.chunk.js.map": "/Oleg-Irchishyn/my-portfolio/static/js/2.9153de5e.chunk.js.map",
+    "static/js/3.c967b78d.chunk.js": "/Oleg-Irchishyn/my-portfolio/static/js/3.c967b78d.chunk.js",
+    "static/js/3.c967b78d.chunk.js.map": "/Oleg-Irchishyn/my-portfolio/static/js/3.c967b78d.chunk.js.map",
+    "index.html": "/Oleg-Irchishyn/my-portfolio/index.html",
+    "static/css/2.2d0886aa.chunk.css.map": "/Oleg-Irchishyn/my-portfolio/static/css/2.2d0886aa.chunk.css.map",
+    "static/css/main.bc15c329.chunk.css.map": "/Oleg-Irchishyn/my-portfolio/static/css/main.bc15c329.chunk.css.map",
+    "static/js/2.9153de5e.chunk.js.LICENSE.txt": "/Oleg-Irchishyn/my-portfolio/static/js/2.9153de5e.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/Oleg-Irchishyn/my-portfolio/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/preloader.9138e735.gif": "/Oleg-Irchishyn/my-portfolio/static/media/preloader.9138e735.gif",
+    "static/media/slick-theme.css": "/Oleg-Irchishyn/my-portfolio/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b942c94.js",
+    "static/css/2.2d0886aa.chunk.css",
+    "static/js/2.9153de5e.chunk.js",
+    "static/css/main.bc15c329.chunk.css",
+    "static/js/main.8979bf09.chunk.js"
+  ]
+}
