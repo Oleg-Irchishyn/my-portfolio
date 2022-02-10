@@ -7,7 +7,8 @@
   padding: 0;
 }
 
-section, div {
+section,
+div {
   box-sizing: border-box;
 }
 
@@ -50,5 +51,36 @@ body {
   #root {
     height: 100%;
     width: 100%;
+  }
+
+  .os-host {
+    width: 80%;
+    height: 200px;
+    font-family: $font-main;
+    font-size: 24px;
+    padding: 0 15px 0 15px;
+    .os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .os-scrollbar.os-scrollbar-vertical .os-scrollbar-track.os-scrollbar-track-off {
+      background: $color-black;
+      width: 40%;
+    }
+    .os-scrollbar.os-scrollbar-vertical {
+      top: 50%;
+      left: calc(100% - 5px);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      height: calc(100% - 30px);
+      .os-scrollbar-track.os-scrollbar-track-off .os-scrollbar-handle {
+        height: 15px !important;
+        width: 15px !important;
+        min-height: 0 !important;
+        left: -7.5px;
+        top: 10px;
+        border-radius: 50%;
+        background: $bg-secondary;
+      }
+    }
   }
 }

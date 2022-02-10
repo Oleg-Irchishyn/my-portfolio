@@ -14,7 +14,6 @@
 
     &__top_content {
         width: 100%;
-        position: relative;
 
         div {
             text-align: center;
@@ -22,6 +21,13 @@
             font-size: 36px;
             font-weight: 500;
             line-height: normal;
+            height: 0;
+            padding: 0 0 150px 0;
         }
     }
+
+   &__bottom_content {
+       width: 100%;
+      
+   }
 }
