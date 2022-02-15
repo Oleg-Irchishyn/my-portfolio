@@ -17,27 +17,27 @@
         .slick-slide {
             position: relative;
             @include sm-devices {
-                transform: perspective(2000px) rotateY(-30deg);
+                transform: perspective(2000px) rotateY(-30deg) !important;
             }
             &.slick-center.slick-active {
-                transform: scale(1.1);
+                transform: scale(1.1) !important;
                 @include md-devices {
-                    transform: scale(1.05);
+                    transform: scale(1.05) !important;
                 }
                 @include sm-devices {
-                    transform: scale(1.05);
+                    transform: scale(1.05) !important;
                 }
             }
-            &.slick-center ~ .slick-active {
-                transform: perspective(2000px) rotateY(-30deg);
+            &.slick-center + .slick-active {
+                transform: perspective(2000px) rotateY(-30deg) !important;
             }
             &.slick-center ~ .slick-slide {
                 @include sm-devices {
-                    transform: perspective(2000px) rotateY(30deg);
+                    transform: perspective(2000px) rotateY(30deg) !important;
                 }
             }
             &.slick-active {
-                transform: perspective(2000px) rotateY(30deg);
+                transform: perspective(2000px) rotateY(30deg) !important;
             }
         }
     }
