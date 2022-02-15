@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.d51be114.chunk.css",
+    "main.css": "/my-portfolio/static/css/main.aa135a03.chunk.css",
     "main.js": "/my-portfolio/static/js/main.f101df9f.chunk.js",
     "main.js.map": "/my-portfolio/static/js/main.f101df9f.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.3aad0a6e.js",
@@ -12,7 +12,7 @@
     "static/js/3.6948f194.chunk.js.map": "/my-portfolio/static/js/3.6948f194.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
     "static/css/2.48d4898e.chunk.css.map": "/my-portfolio/static/css/2.48d4898e.chunk.css.map",
-    "static/css/main.d51be114.chunk.css.map": "/my-portfolio/static/css/main.d51be114.chunk.css.map",
+    "static/css/main.aa135a03.chunk.css.map": "/my-portfolio/static/css/main.aa135a03.chunk.css.map",
     "static/js/2.d7ef9162.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.d7ef9162.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/my-portfolio/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/img_1.f6b826dd.jpg": "/my-portfolio/static/media/img_1.f6b826dd.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.3aad0a6e.js",
     "static/css/2.48d4898e.chunk.css",
     "static/js/2.d7ef9162.chunk.js",
-    "static/css/main.d51be114.chunk.css",
+    "static/css/main.aa135a03.chunk.css",
     "static/js/main.f101df9f.chunk.js"
   ]
 }
