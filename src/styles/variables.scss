@@ -1,5 +1,4 @@
 /*variables*/
-
 $font-stack: "Inter", "Jost", sans-serif;
 $font-main: "Inter", sans-serif;
 $font-secondary: "Jost", sans-serif;
@@ -22,12 +21,12 @@ $color-wrong: rgba(219, 16, 16, 0.856);
   }
 }
 @mixin md-devices {
-  @media (max-width: 991px) {
+  @media(min-width: 768px) and (max-width: 991px) {
     @content;
   }
 }
 @mixin lg-devices {
-  @media (max-width: 1199px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     @content;
   }
 }
@@ -41,3 +40,29 @@ $color-wrong: rgba(219, 16, 16, 0.856);
     @content;
   }
 }
+
+/*keyframes*/
+  @keyframes slideShow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideShow  {
+    0% {
+    }
+    5%,25% {
+       opacity: 0.4;
+    }
+    15%,35% {
+      opacity: 0.7;
+    }
+    40% {
+      opacity: 1;
+  }
+}
+
+

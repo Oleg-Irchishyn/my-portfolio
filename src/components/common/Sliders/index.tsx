@@ -1,46 +1,42 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './styles/sliders.scss';
+import cn from 'classnames';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { SitesType } from '../../../redux/types/types';
+import { SliderItem } from '..';
 
 const PrevArrow = (props: any) => {
   const { onClick } = props;
-  return <div onClick={onClick}>Back</div>;
+  return <div onClick={onClick} className={'slider-left-arrow'}>
+    <i className="fa  fa-angle-left"></i>
+  </div>;
 };
 
 const NextArrow = (props: any) => {
   const { onClick } = props;
 
-  return <div onClick={onClick}>Forward</div>;
+  return <div onClick={onClick} className={'slider-right-arrow'}>
+    <i className="fa fa-angle-right"></i>
+  </div>;
 };
 
-const SliderExample: React.FC = () => {
+const PortFolioSlider: React.FC<ownProps> = ({sliderSites}) => {
   var settings = {
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     pauseOnHover: true,
-    slidesToShow: 4,
+    pauseOnFocus: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '60px',
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
       {
         breakpoint: 767,
         settings: {
@@ -50,7 +46,18 @@ const SliderExample: React.FC = () => {
       },
     ],
   };
-  return <Slider {...settings}></Slider>;
+  return <Slider {...settings} className={cn('portfolio__list')}>
+{
+  sliderSites.map((item: SitesType, index) => {
+    const {title, url} = item;
+    return <SliderItem item ={item} key={`${title}_${index}`}/>
+  })
+}
+  </Slider>;
 };
 
-export default SliderExample;
+type ownProps = {
+  sliderSites: Array<SitesType>
+}
+
+export default PortFolioSlider;
