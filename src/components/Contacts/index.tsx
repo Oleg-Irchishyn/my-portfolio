@@ -5,9 +5,9 @@ import cn from 'classnames';
 
 const Contacts: React.FC = React.memo(() => {
   return (
-    <section className={cn(styles.contacts)}>
+    <section data-aos="zoom-in-down" data-aos-duration="500" className={cn(styles.contacts)}>
       <div className={'container'}>
-        <ul data-aos="zoom-in-down" data-aos-duration="500" id="contacts" className={cn(styles.contacts__list)}>
+        <ul  id="contacts" className={cn(styles.contacts__list)}>
           <li >
           <b>LinkedIn:</b>
             {' '}
