@@ -3,7 +3,7 @@ import { SitesType } from '../../../../redux/types/types';
 import { ExternalLink } from 'react-external-link';
 import cn from 'classnames';
 
-const SliderItem: React.FC<ownProps> = ({ item }) => {
+const PortFolioSliderItem: React.FC<ownProps> = ({ item }) => {
   const { title, url } = item;
   return (
     <div className={cn('item')}>
@@ -18,4 +18,4 @@ type ownProps = {
   item: SitesType;
 };
 
-export default SliderItem;
+export default PortFolioSliderItem;

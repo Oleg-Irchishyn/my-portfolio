@@ -53,14 +53,9 @@ $color-wrong: rgba(219, 16, 16, 0.856);
 
   @keyframes slideShow  {
     0% {
+      opacity: 0.5;
     }
-    5%,25% {
-       opacity: 0.4;
-    }
-    15%,35% {
-      opacity: 0.7;
-    }
-    40% {
+    100% {
       opacity: 1;
   }
 }

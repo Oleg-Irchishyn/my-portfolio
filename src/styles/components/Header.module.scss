@@ -42,7 +42,6 @@
             margin: 0 1vw 0 0;
             text-shadow: 1px 1px 2px $color-black;
             transform: none;
-            cursor: pointer;
             transition: 0.2s ease;
             @media (min-width: 992px) {
                 &:hover{ 
@@ -89,7 +88,6 @@
     justify-content: center;
     width: 45px;
     height: 100%;
-    cursor: pointer;
     &.active_burger {
         span {
             position: absolute;

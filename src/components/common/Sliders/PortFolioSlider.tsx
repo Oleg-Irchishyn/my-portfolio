@@ -5,7 +5,7 @@ import cn from 'classnames';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { SitesType } from '../../../redux/types/types';
-import { SliderItem } from '..';
+import { PortFolioSliderItem} from '..';
 
 const PrevArrow = (props: any) => {
   const { onClick } = props;
@@ -50,7 +50,7 @@ const PortFolioSlider: React.FC<ownProps> = ({sliderSites}) => {
 {
   sliderSites.map((item: SitesType, index) => {
     const {title, url} = item;
-    return <SliderItem item ={item} key={`${title}_${index}`}/>
+    return <PortFolioSliderItem item ={item} key={`${title}_${index}`}/>
   })
 }
   </Slider>;

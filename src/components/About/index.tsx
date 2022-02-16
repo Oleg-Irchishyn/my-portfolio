@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './../../styles/components/About.module.scss';
 import { ReactTypical } from '@deadcoder0904/react-typical';
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
-import { ImagesSlideShow } from '../index';
+import  ImageSlider  from '../../components/common/Sliders/ImageSlider';
 import cn from 'classnames';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
@@ -26,7 +26,7 @@ const About: React.FC = React.memo(() => {
         />
       </div>
       <div className={cn(styles.about__bottom_content, 'container')}>
-        <ImagesSlideShow />
+        <ImageSlider />
         <OverlayScrollbarsComponent>
           <p> Outsource company or a product one is not a concern to me.</p>
           <p>I am looking for the company, that would give me an opportunity to grow and learn. </p>
