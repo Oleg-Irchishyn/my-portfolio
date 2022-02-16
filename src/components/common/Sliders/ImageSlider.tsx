@@ -20,8 +20,8 @@ const ImageSlider: React.FC = React.memo(() => {
     pauseOnFocus: true,
   };
   return (
-    <Slider {...settings} className={cn('images_slideShow')}>
-      <div>
+    <Slider {...settings} className={cn('images_slideShow', 'aos-item')}>
+      <div data-aos="fade-up-left" data-aos-duration="500" >
         {' '}
         <img src={imgFirst} alt="my images" />
       </div>

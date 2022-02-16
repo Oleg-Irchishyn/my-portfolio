@@ -6,7 +6,7 @@ import cn from 'classnames';
 const PortFolioSliderItem: React.FC<ownProps> = React.memo(({ item }) => {
   const { title, url } = item;
   return (
-    <div className={cn('item')}>
+    <div data-aos="zoom-in" data-aos-duration="500" className={cn('item')}>
       <ExternalLink title={title} href={url} rel="nofollow" className={cn('item__link')}>
         <span> {title}</span>
       </ExternalLink>

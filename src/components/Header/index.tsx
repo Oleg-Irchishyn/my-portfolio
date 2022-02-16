@@ -7,6 +7,7 @@ import { compose } from 'redux';
 import { AppStateType } from '../../redux/store';
 import { getLinks } from '../../redux/selectors/appSelectors';
 
+
 const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({ links }) => {
   const [activeBurger, setActiveBurger] = React.useState(false);
   const [activeNavList, setActiveNavList] = React.useState(false);
@@ -38,9 +39,10 @@ const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({
     };
   }, [handleNavListOutsideClick]);
 
+
   return (
     <section className={cn(styles.header)}>
-      <div className={cn(styles.header__nav)}>
+      <div data-aos="fade-up" data-aos-duration="500"  className={cn(styles.header__nav)}>
         <div
           onClick={() => handleBurgerOutsideClick(activeBurger, activeNavList)}
           className={cn(styles.burger_menu, {

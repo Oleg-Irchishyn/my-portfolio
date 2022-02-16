@@ -9,7 +9,7 @@ import { PortFolioSliderItem} from '..';
 
 const PrevArrow = (props: any) => {
   const { onClick } = props;
-  return <div onClick={onClick} className={'slider-left-arrow'}>
+  return <div data-aos="zoom-in" data-aos-duration="500" onClick={onClick} className={'slider-left-arrow'}>
     <i className="fa  fa-angle-left"></i>
   </div>;
 };
@@ -17,7 +17,7 @@ const PrevArrow = (props: any) => {
 const NextArrow = (props: any) => {
   const { onClick } = props;
 
-  return <div onClick={onClick} className={'slider-right-arrow'}>
+  return <div data-aos="zoom-in" data-aos-duration="500" onClick={onClick} className={'slider-right-arrow'}>
     <i className="fa fa-angle-right"></i>
   </div>;
 };

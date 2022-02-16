@@ -9,7 +9,7 @@ import 'overlayscrollbars/css/OverlayScrollbars.css';
 const About: React.FC = React.memo(() => {
   return (
     <section id="about" className={cn(styles.about)}>
-      <div className={cn(styles.about__top_content, 'container')}>
+      <div data-aos="flip-up" data-aos-duration="500" className={cn(styles.about__top_content, 'container', 'aos-item')}>
         <ReactTypical
           steps={[
             `HI, Pleasure to meet you 👋`,
@@ -27,20 +27,20 @@ const About: React.FC = React.memo(() => {
       </div>
       <div className={cn(styles.about__bottom_content, 'container')}>
         <ImageSlider />
-        <OverlayScrollbarsComponent>
-          <p> Outsource company or a product one is not a concern to me.</p>
-          <p>I am looking for the company, that would give me an opportunity to grow and learn. </p>
-          <p>
+        <OverlayScrollbarsComponent >
+          <p data-aos="flip-down" data-aos-duration="500"> Outsource company or a product one is not a concern to me.</p>
+          <p data-aos="flip-down" data-aos-duration="500">I am looking for the company, that would give me an opportunity to grow and learn. </p>
+          <p data-aos="flip-down" data-aos-duration="500">
             {' '}
             The most important moment for me is communication within the development team and
             clients.{' '}
           </p>
-          <p>Bad management causes a lot of issues, as well as bad code. </p>
-          <p>
+          <p data-aos="flip-down" data-aos-duration="500">Bad management causes a lot of issues, as well as bad code. </p>
+          <p data-aos="flip-down" data-aos-duration="500">
             Whether I will be coding websites or web services, all I want is to sharpen my skills
             and learn JS and ReactJS on real projects.{' '}
           </p>
-          <p>
+          <p data-aos="flip-down" data-aos-duration="500">
             The end goal is to become an outstanding developer, who will participate in difficult
             projects, which will bring profit to a company and satisfaction to me.
           </p>
