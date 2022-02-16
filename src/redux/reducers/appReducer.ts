@@ -1,6 +1,16 @@
-import { LinkType, SitesType } from './../types/types';
+import { LinkType, SitesType, TechnologiesType } from './../types/types';
 import { ThunkDispatch } from 'redux-thunk';
 import { AppStateType, InferActionsTypes } from './../store';
+import html5 from '../../assets/images/technologies/html5.png';
+import css3 from '../../assets/images/technologies/css3.png';
+import scss from '../../assets/images/technologies/scss.png';
+import bootstrap from '../../assets/images/technologies/bootstrap.png';
+import js from '../../assets/images/technologies/js.png';
+import ts from '../../assets/images/technologies/ts.png';
+import react from '../../assets/images/technologies/react.png';
+import jquery from '../../assets/images/technologies/jquery.png';
+import webpack from '../../assets/images/technologies/webpack.png';
+import git from '../../assets/images/technologies/git.png';
 const INITIALIZED_SUCCESS = 'SK/APP/INITIALIZED_SUCCESS';
 
 let initialState = {
@@ -58,6 +68,48 @@ let initialState = {
       url: 'https://oleg-irchishyn.github.io/UP_Real_Staging/',
     },
   ] as Array<SitesType>,
+  technologies: [
+    {
+      title: 'html5',
+      image: html5
+    },
+    {
+      title: 'css3',
+      image: css3
+    },
+    {
+      title: 'scss',
+      image: scss
+    },
+    {
+      title: 'javascript',
+      image: js
+    },
+    {
+      title: 'reactJS',
+      image: react
+    },
+    {
+      title: 'typescript',
+      image: ts
+    },
+    {
+      title: 'jquery',
+      image: jquery
+    },
+    {
+      title: 'webpack',
+      image: webpack
+    },
+    {
+      title: 'bootstrap',
+      image: bootstrap
+    },
+    {
+      title: 'git',
+      image: git
+    }
+  ]  as Array<TechnologiesType>
 };
 
 const appReducer = (state = initialState, action: ActionsTypes): initialStateType => {

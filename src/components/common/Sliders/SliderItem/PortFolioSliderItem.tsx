@@ -3,7 +3,7 @@ import { SitesType } from '../../../../redux/types/types';
 import { ExternalLink } from 'react-external-link';
 import cn from 'classnames';
 
-const PortFolioSliderItem: React.FC<ownProps> = ({ item }) => {
+const PortFolioSliderItem: React.FC<ownProps> = React.memo(({ item }) => {
   const { title, url } = item;
   return (
     <div className={cn('item')}>
@@ -12,7 +12,7 @@ const PortFolioSliderItem: React.FC<ownProps> = ({ item }) => {
       </ExternalLink>
     </div>
   );
-};
+});
 
 type ownProps = {
   item: SitesType;

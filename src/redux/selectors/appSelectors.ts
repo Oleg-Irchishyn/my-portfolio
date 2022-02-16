@@ -8,3 +8,9 @@ export const getSites = (state: AppStateType) => {
   return state.app.sites;
 }
 
+export const getTechnologies = (state: AppStateType) => {
+  return state.app.technologies;
+}
+
+
+

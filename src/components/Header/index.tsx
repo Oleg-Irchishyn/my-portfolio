@@ -7,7 +7,7 @@ import { compose } from 'redux';
 import { AppStateType } from '../../redux/store';
 import { getLinks } from '../../redux/selectors/appSelectors';
 
-const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = ({ links }) => {
+const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({ links }) => {
   const [activeBurger, setActiveBurger] = React.useState(false);
   const [activeNavList, setActiveNavList] = React.useState(false);
 
@@ -76,7 +76,7 @@ const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = ({ links }) =
       </div>
     </section>
   );
-};
+});
 
 const mapStateToProps = (state: AppStateType) => ({
   links: getLinks(state),

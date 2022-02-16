@@ -22,7 +22,7 @@ const NextArrow = (props: any) => {
   </div>;
 };
 
-const PortFolioSlider: React.FC<ownProps> = ({sliderSites}) => {
+const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites}) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -54,7 +54,7 @@ const PortFolioSlider: React.FC<ownProps> = ({sliderSites}) => {
   })
 }
   </Slider>;
-};
+});
 
 type ownProps = {
   sliderSites: Array<SitesType>

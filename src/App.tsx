@@ -4,7 +4,7 @@ import portfStyles from './styles/components/PortFolio.module.scss';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'redux';
-import { Header, About } from './components/';
+import { Header, About, Technologies } from './components/';
 import { PortFolioSlider } from './components/common/';
 import { AppStateType } from './redux/store';
 import cn from 'classnames';
@@ -29,6 +29,7 @@ const App: React.FC<MapStatePropsType & MapDispatchPropsType & ownProps> = React
       <section id="portfolio" className={cn(portfStyles.portfolio)}>
         <PortFolioSlider  sliderSites={sites}/>
       </section>
+      <Technologies />
     </div>
   );
 });

@@ -7,13 +7,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import cn from 'classnames';
 
-const ImageSlider: React.FC = () => {
+const ImageSlider: React.FC = React.memo(() => {
   var settings = {
     dots: false,
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true,
@@ -31,6 +31,6 @@ const ImageSlider: React.FC = () => {
       </div>
     </Slider>
   );
-};
+});
 
 export default ImageSlider;
