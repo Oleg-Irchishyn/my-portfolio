@@ -8,7 +8,8 @@ import { getTechnologies } from '../../redux/selectors/appSelectors';
 
 const Technologies: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({technologies}) => {
   return (
-    <section id="technologies-stack" className={cn(styles.technologies, 'container')}>
+    <section id="technologies-stack" className={cn(styles.technologies)}>
+      <div className={cn('container')}>
       <div className={cn(styles.technologies_list)}>
       {technologies.map((item, index) => {
           const {title, image} = item;
@@ -16,6 +17,7 @@ const Technologies: React.FC<MapStatePropsType & MapDispatchPropsType> = React.m
           <img src={image} alt={title} />
         </div>
       })}
+      </div>
       </div>
     </section>
   )
