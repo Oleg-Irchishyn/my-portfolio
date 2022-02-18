@@ -2,10 +2,13 @@ import { createStore, combineReducers, compose, applyMiddleware, Action } from '
 import appReducer from './reducers/appReducer';
 import thunkMiddleware, { ThunkAction } from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
+//@ts-ignore
+import { IntlReducer as Intl } from 'react-redux-multilingual'
 
 let rootReducer = combineReducers({
   app: appReducer,
   form: formReducer,
+  Intl 
 });
 
 const middlewares = [thunkMiddleware];

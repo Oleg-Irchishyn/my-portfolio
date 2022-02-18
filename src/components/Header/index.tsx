@@ -1,14 +1,19 @@
 import React from 'react';
 import styles from './../../styles/components/Header.module.scss';
+import {LanguagePicker} from '../'
 import cn from 'classnames';
 import { Link } from 'react-scroll';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { AppStateType } from '../../redux/store';
-import { getLinks } from '../../redux/selectors/appSelectors';
+import { getActiveLanguage, getLinks } from '../../redux/selectors/appSelectors';
+import {actions} from '../../redux/reducers/appReducer'
+//@ts-ignore
+import { useTranslate } from 'react-redux-multilingual'
 
 
-const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({ links }) => {
+const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({ links,  activeLang, setActiveLanguage }) => {
+  const t = useTranslate()
   const [activeBurger, setActiveBurger] = React.useState(false);
   const [activeNavList, setActiveNavList] = React.useState(false);
 
@@ -39,7 +44,6 @@ const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({
     };
   }, [handleNavListOutsideClick]);
 
-
   return (
     <section className={cn(styles.header)}>
       <div data-aos="fade-up" data-aos-duration="500"  className={cn(styles.header__nav)}>
@@ -58,7 +62,19 @@ const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({
             [styles.active_dropdown]: activeNavList,
           })}>
           {links.map((el, index) => {
-            const { text, dataScroll } = el;
+            let { text, dataScroll } = el;
+           
+            if( index === 0) {
+              text = t('headerNav.about')
+            } else if ( index === 1) {
+              text = t('headerNav.porftfolio')
+            }
+            else if ( index === 2) {
+              text = t('headerNav.technologiesStack')
+            }
+            else if ( index === 3) {
+              text = t('headerNav.contacts')
+            }
             return (
               <li key={`${text}_${index}`}>
                 <Link
@@ -74,6 +90,8 @@ const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({
               </li>
             );
           })}
+
+<LanguagePicker activeLang={activeLang} setActiveLanguage={setActiveLanguage}/>
         </ul>
       </div>
     </section>
@@ -82,11 +100,16 @@ const Header: React.FC<MapStatePropsType & MapDispatchPropsType> = React.memo(({
 
 const mapStateToProps = (state: AppStateType) => ({
   links: getLinks(state),
+  activeLang: getActiveLanguage(state)
 });
 
 type MapStatePropsType = ReturnType<typeof mapStateToProps>;
-type MapDispatchPropsType = {};
+type MapDispatchPropsType = {
+  setActiveLanguage: (lang: string) => void
+};
 
 export default compose<React.ComponentType>(
-  connect<MapStatePropsType, MapDispatchPropsType, {}, AppStateType>(mapStateToProps, {}),
+  connect<MapStatePropsType, MapDispatchPropsType, {}, AppStateType>(mapStateToProps, {
+    setActiveLanguage: actions.setActiveLanguage
+  }),
 )(Header);

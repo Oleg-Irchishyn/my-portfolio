@@ -11,9 +11,11 @@ import react from '../../assets/images/technologies/react.png';
 import jquery from '../../assets/images/technologies/jquery.png';
 import webpack from '../../assets/images/technologies/webpack.png';
 import git from '../../assets/images/technologies/git.png';
-const INITIALIZED_SUCCESS = 'SK/APP/INITIALIZED_SUCCESS';
+const INITIALIZED_SUCCESS = 'PORTFOLIO/APP/INITIALIZED_SUCCESS';
+const SET_ACTIVE_LANG = 'PORTFOLIO/APP/SET_ACTIVE_LANG';
 
 let initialState = {
+  activeLang: 'en' as string,
   initialized: false as boolean,
   links: [
     {
@@ -120,6 +122,12 @@ const appReducer = (state = initialState, action: ActionsTypes): initialStateTyp
         initialized: true,
       };
 
+      case SET_ACTIVE_LANG:
+        return {
+          ...state,
+          activeLang: action.payload,
+        };
+
     default:
       return state;
   }
@@ -127,6 +135,7 @@ const appReducer = (state = initialState, action: ActionsTypes): initialStateTyp
 
 export const actions = {
   initializedSuccess: () => ({ type: INITIALIZED_SUCCESS } as const),
+  setActiveLanguage: (lang: string) => ({ type: SET_ACTIVE_LANG, payload: lang } as const),
 };
 
 export const initializeApp = () => (dispatch: ThunkDispatchType) => {

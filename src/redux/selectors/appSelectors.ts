@@ -12,5 +12,8 @@ export const getTechnologies = (state: AppStateType) => {
   return state.app.technologies;
 }
 
+export const getActiveLanguage = (state: AppStateType) => {
+  return state.app.activeLang;
+}
 
 
