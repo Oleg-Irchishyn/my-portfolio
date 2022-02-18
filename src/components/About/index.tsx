@@ -5,20 +5,23 @@ import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import  ImageSlider  from '../../components/common/Sliders/ImageSlider';
 import cn from 'classnames';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
+//@ts-ignore
+import { useTranslate } from 'react-redux-multilingual'
 
 const About: React.FC = React.memo(() => {
+  const t = useTranslate()
   return (
     <section id="about" className={cn(styles.about)}>
       <div data-aos="flip-up" data-aos-duration="500" className={cn(styles.about__top_content, 'container', 'aos-item')}>
         <ReactTypical
           steps={[
-            `HI, Pleasure to meet you 👋`,
+            t('greetingsLine.first'),
             1000,
-            `I am Oleg, a Front-end developer with experience in Vanilla JS and ReactJS 💖`,
+            t('greetingsLine.second'),
             1000,
-            `Below, you may find more info about me and my projects 👇`,
+            t('greetingsLine.third'),
             1000,
-            `Hope, you will enjoy them 😎`,
+            t('greetingsLine.fourth'),
             1000,
           ]}
           loop={1}
