@@ -41,6 +41,10 @@ let initialState = {
       url: 'https://react-iq-quiz-app.herokuapp.com/',
     },
     {
+      title: 'Sneakers E-Shop',
+      url: 'https://react-sneakers-eshop.herokuapp.com/#/',
+    },
+    {
       title: 'Todo List',
       url: 'https://reactjs-todo-lists-app.herokuapp.com/#/',
     },
@@ -61,7 +65,7 @@ let initialState = {
       url: 'https://oleg-irchishyn.github.io/smile-expo-proto/web/',
     },
     {
-      title: 'Diamon Drilling Services Landing Page',
+      title: 'Diamond Drilling Services Landing Page',
       url: 'http://almaz-ok.kiev.ua/index_eng.html',
     },
     { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing_Staging/' },

@@ -34,6 +34,8 @@ const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites}) => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '60px',
+    swipe: true,
+    draggable: false,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
