@@ -13,10 +13,6 @@ const LanguagePicker: React.FC<ownProps> = React.memo(({activeLang, setActiveLan
     {
         title: 'Ukr',
         dataTitle: 'uk'
-    },
-    {
-        title: 'Rus',
-        dataTitle: 'ru'
     }]
 
     const dispatch = useDispatch()

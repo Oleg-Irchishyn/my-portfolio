@@ -38,7 +38,7 @@ let initialState = {
   sites: [
     {
       title: 'Gambling Quiz',
-      url: 'https://react-iq-quiz-app.herokuapp.com/',
+      url: 'https://oleg-irchishyn.github.io/React_Quiz/web/',
     },
     {
       title: 'Sneakers E-Shop',
