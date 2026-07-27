@@ -50,7 +50,7 @@ let initialState = {
     },
     {
       title: 'Pizza E-Shop',
-      url: 'https://react-pizza-eshop.herokuapp.com/#/',
+      url: 'https://oleg-irchishyn.github.io/React_Pizza/web/',
     },
     {
       title: 'Budget Calculation App',
