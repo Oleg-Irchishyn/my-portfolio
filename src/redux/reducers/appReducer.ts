@@ -46,7 +46,7 @@ let initialState = {
     },
     {
       title: 'Todo List',
-      url: 'https://reactjs-todo-lists-app.herokuapp.com/#/',
+      url: 'https://oleg-irchishyn.github.io/ReactJS_ToDo_List/web/',
     },
     {
       title: 'Pizza E-Shop',
