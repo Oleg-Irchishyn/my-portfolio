@@ -53,20 +53,12 @@ let initialState = {
       url: 'https://oleg-irchishyn.github.io/React_Pizza/web/',
     },
     {
-      title: 'Budget Calculation App',
-      url: 'https://oleg-irchishyn.github.io/React-Budget-App/',
-    },
-    {
-      title: 'Library E-Shop',
-      url: 'https://oleg-irchishyn.github.io/E-shop/',
-    },
-    {
       title: `Smile Expo's New Design`,
       url: 'https://oleg-irchishyn.github.io/smile-expo-proto/web/',
     },
     {
       title: 'Diamond Drilling Services Landing Page',
-      url: 'http://almaz-ok.kiev.ua/index_eng.html',
+      url: 'https://oleg-irchishyn.github.io/Almazok/web/',
     },
     { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing_Staging/' },
     {
