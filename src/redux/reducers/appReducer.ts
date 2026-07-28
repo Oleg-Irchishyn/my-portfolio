@@ -42,7 +42,7 @@ let initialState = {
     },
     {
       title: 'Sneakers E-Shop',
-      url: 'https://react-sneakers-eshop.herokuapp.com/#/',
+      url: 'https://oleg-irchishyn.github.io/React-Sneakers-Eshop/web/#/',
     },
     {
       title: 'Todo List',

@@ -23,9 +23,6 @@ const Contacts: React.FC = React.memo(() => {
               </ExternalLink>
           </li>
           <li >
-            <b>Skype:</b> <span>live:.cid.c717d8523ec917d7</span>
-          </li>
-          <li >
             <b>E-mail:</b>
             <span>oleg.irchishyn91@gmail.com</span>
           </li>
