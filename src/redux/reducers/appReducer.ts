@@ -63,7 +63,7 @@ let initialState = {
     { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing_Staging/' },
     {
       title: 'Up Real Estate Landing',
-      url: 'https://oleg-irchishyn.github.io/UP_Real_Staging/',
+      url: 'https://oleg-irchishyn.github.io/Up_Real_Estate/web/',
     },
   ] as Array<SitesType>,
   technologies: [
