@@ -43,8 +43,8 @@ const App: React.FC<MapStatePropsType & MapDispatchPropsType & ownProps> = React
         <Header />
         <About />
         <section id="portfolio" className={cn(portfStyles.portfolio)}>
-          <PortFolioSlider title={t('portfolio.webpackTitle')} sliderSites={webpackSites} />
           <PortFolioSlider title={t('portfolio.reactTitle')} sliderSites={reactSites} />
+          <PortFolioSlider title={t('portfolio.webpackTitle')} sliderSites={webpackSites} />
         </section>
         <Technologies />
         <Contacts />
