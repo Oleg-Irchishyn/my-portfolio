@@ -22,7 +22,7 @@ const NextArrow = (props: any) => {
   </div>;
 };
 
-const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites}) => {
+const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites, title}) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -48,18 +48,26 @@ const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites}) => {
       },
     ],
   };
-  return <Slider {...settings} className={cn('portfolio__list')}>
+  return <div className={cn('portfolio__group')}>
+  {title && (
+    <h3 data-aos="zoom-in" data-aos-duration="500" className={cn('portfolio__group-title')}>
+      {title}
+    </h3>
+  )}
+  <Slider {...settings} className={cn('portfolio__list')}>
 {
   sliderSites.map((item: SitesType, index) => {
     const {title, url} = item;
     return <PortFolioSliderItem item ={item} key={`${title}_${index}`}/>
   })
 }
-  </Slider>;
+  </Slider>
+  </div>;
 });
 
 type ownProps = {
-  sliderSites: Array<SitesType>
+  sliderSites: Array<SitesType>;
+  title?: string;
 }
 
 export default PortFolioSlider;

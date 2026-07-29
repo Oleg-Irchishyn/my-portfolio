@@ -4,8 +4,12 @@ export const getLinks = (state: AppStateType) => {
   return state.app.links;
 }
 
-export const getSites = (state: AppStateType) => {
-  return state.app.sites;
+export const getWebpackSites = (state: AppStateType) => {
+  return state.app.webpackSites;
+}
+
+export const getReactSites = (state: AppStateType) => {
+  return state.app.reactSites;
 }
 
 export const getTechnologies = (state: AppStateType) => {

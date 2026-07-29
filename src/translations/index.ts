@@ -28,6 +28,10 @@ export const translations = {
         contacts: {
           profile: `profile`,
           number: `Number:`
+        },
+        portfolio: {
+          webpackTitle: `Not fullstack — frontend-only landing pages, built with Webpack`,
+          reactTitle: `Fullstack projects, built with React.js + json-server`
         }
       }
     },
@@ -57,6 +61,10 @@ export const translations = {
         contacts: {
           profile: `профіль`,
           number: `Номер:`
+        },
+        portfolio: {
+          webpackTitle: `Не Fullstack — фронтенд-лендінги, зібрані на Webpack`,
+          reactTitle: `Fullstack проєкти, зібрані на React.js + json-server`
         }
       }
     }

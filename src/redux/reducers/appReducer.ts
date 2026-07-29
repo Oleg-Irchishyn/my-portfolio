@@ -35,10 +35,29 @@ let initialState = {
       dataScroll: 'contacts',
     },
   ] as Array<LinkType>,
-  sites: [
+  webpackSites: [
+    { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing/web/' },
+    {
+      title: 'Diamond Drilling Services Landing Page',
+      url: 'https://oleg-irchishyn.github.io/Almazok/web/',
+    },
+    {
+      title: 'Up Real Estate Landing',
+      url: 'https://oleg-irchishyn.github.io/Up_Real_Estate/web/',
+    },
+    {
+      title: `Smile Expo's New Design`,
+      url: 'https://oleg-irchishyn.github.io/smile-expo-proto/web/',
+    },
+  ] as Array<SitesType>,
+  reactSites: [
     {
       title: 'Gambling Quiz',
       url: 'https://oleg-irchishyn.github.io/React_Quiz/web/',
+    },
+    {
+      title: 'Pizza E-Shop',
+      url: 'https://oleg-irchishyn.github.io/React_Pizza/web/',
     },
     {
       title: 'Sneakers E-Shop',
@@ -47,23 +66,6 @@ let initialState = {
     {
       title: 'Todo List',
       url: 'https://oleg-irchishyn.github.io/ReactJS_ToDo_List/web/',
-    },
-    {
-      title: 'Pizza E-Shop',
-      url: 'https://oleg-irchishyn.github.io/React_Pizza/web/',
-    },
-    {
-      title: `Smile Expo's New Design`,
-      url: 'https://oleg-irchishyn.github.io/smile-expo-proto/web/',
-    },
-    {
-      title: 'Diamond Drilling Services Landing Page',
-      url: 'https://oleg-irchishyn.github.io/Almazok/web/',
-    },
-    { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing/web/' },
-    {
-      title: 'Up Real Estate Landing',
-      url: 'https://oleg-irchishyn.github.io/Up_Real_Estate/web/',
     },
   ] as Array<SitesType>,
   technologies: [
