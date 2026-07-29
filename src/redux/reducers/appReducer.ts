@@ -60,7 +60,7 @@ let initialState = {
       title: 'Diamond Drilling Services Landing Page',
       url: 'https://oleg-irchishyn.github.io/Almazok/web/',
     },
-    { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing_Staging/' },
+    { title: 'Fjord Landing', url: 'https://oleg-irchishyn.github.io/Fjord_Landing/web/' },
     {
       title: 'Up Real Estate Landing',
       url: 'https://oleg-irchishyn.github.io/Up_Real_Estate/web/',
