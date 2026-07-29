@@ -13,7 +13,7 @@ import {translations} from './translations/'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Provider store={store}>
       <IntlProvider translations={translations} locale='en'>
         <App />

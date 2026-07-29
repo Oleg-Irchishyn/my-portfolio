@@ -8,7 +8,7 @@ import { useTranslate } from 'react-redux-multilingual'
 const Contacts: React.FC = React.memo(() => {
   const t = useTranslate()
   return (
-    <section data-aos="zoom-in-down" data-aos-duration="500" data-aos-offset="-200" className={cn(styles.contacts)}>
+    <section className={cn(styles.contacts)}>
       <div className={'container'}>
         <ul  id="contacts" className={cn(styles.contacts__list)}>
           <li >

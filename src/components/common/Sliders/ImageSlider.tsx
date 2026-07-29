@@ -2,10 +2,13 @@ import React from 'react';
 import imgFirst from '../../../assets/images/img_1.jpg';
 import imgSecond from '../../../assets/images/img_2.jpg';
 import './styles/sliders.scss';
-import Slider from 'react-slick';
+import * as ReactSlick from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import cn from 'classnames';
+
+// Vite's dev-mode CJS interop doesn't always unwrap react-slick's default export; do it explicitly.
+const Slider = (ReactSlick as unknown as { default: typeof ReactSlick.default }).default ?? (ReactSlick as unknown as typeof ReactSlick.default);
 
 const ImageSlider: React.FC = React.memo(() => {
   var settings = {

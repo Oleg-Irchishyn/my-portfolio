@@ -1,4 +1,4 @@
-@import "../../../../styles/variables";
+@use "../../../../styles/variables" as *;
 
 .portfolio__group {
     &-title {
@@ -169,6 +169,7 @@
     img {
         flex: 1;
         max-width: 100%;
+        aspect-ratio: 3 / 2;
         object-fit: cover;
         border-radius: inherit;
     }

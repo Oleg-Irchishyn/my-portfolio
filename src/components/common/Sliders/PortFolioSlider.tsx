@@ -1,11 +1,14 @@
 import React from 'react';
-import Slider from 'react-slick';
+import * as ReactSlick from 'react-slick';
 import './styles/sliders.scss';
 import cn from 'classnames';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { SitesType } from '../../../redux/types/types';
 import { PortFolioSliderItem} from '..';
+
+// Vite's dev-mode CJS interop doesn't always unwrap react-slick's default export; do it explicitly.
+const Slider = (ReactSlick as unknown as { default: typeof ReactSlick.default }).default ?? (ReactSlick as unknown as typeof ReactSlick.default);
 
 const PrevArrow = (props: any) => {
   const { onClick } = props;
