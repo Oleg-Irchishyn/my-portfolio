@@ -32,6 +32,7 @@ export const translations = {
       portfolio: {
         webpackTitle: `Not fullstack — frontend-only landing pages, built with Webpack`,
         reactTitle: `Fullstack projects, built with React.js + json-server`,
+        websocketTitle: `Fullstack projects, built with React.js/Next.js + Node.js/Express.js/Nest.js/Websockets`,
       },
     },
   },
@@ -65,6 +66,7 @@ export const translations = {
       portfolio: {
         webpackTitle: `Не Fullstack — фронтенд-лендінги, зібрані на Webpack`,
         reactTitle: `Fullstack проєкти, зібрані на React.js + json-server`,
+        websocketTitle: `Fullstack проєкти, зібрані на React.js/Next.js + Node.js/Express.js/Nest.js/Websockets`,
       },
     },
   },

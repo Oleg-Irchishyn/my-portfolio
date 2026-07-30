@@ -24,6 +24,18 @@
     align-items: stretch;
     justify-content: flex-start;
     padding: 150px 0 0 0;
+
+    // The 150px top padding makes room for the absolutely-positioned prev/next
+    // arrows above the track. Sliders with a single slide render without
+    // arrows (nothing to navigate to), so that space is just empty — halve it
+    // for the breakpoints where arrows would otherwise show (768px and up;
+    // below that arrows are already hidden and padding already reduced).
+    // Once a slider like this gains more slides, arrows come back and so
+    // does the full padding, since this class is only applied without them.
+    &--no-arrows {
+        padding-top: 75px;
+    }
+
     @include sm-devices {
         padding: 60px 0 0 0;
     }

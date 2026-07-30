@@ -12,6 +12,10 @@ export const getReactSites = (state: AppStateType) => {
   return state.app.reactSites;
 }
 
+export const getWebSocketSites = (state: AppStateType) => {
+  return state.app.fullstackSites;
+}
+
 export const getTechnologies = (state: AppStateType) => {
   return state.app.technologies;
 }

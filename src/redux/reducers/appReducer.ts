@@ -54,6 +54,12 @@ let initialState = {
       url: 'https://oleg-irchishyn.github.io/smile-expo-proto/web/',
     },
   ] as Array<SitesType>,
+  fullstackSites: [
+    {
+      title: 'Paint Online',
+      url: 'https://oleg-irchishyn.github.io/paint-online-course/',
+    },
+  ] as Array<SitesType>,
   reactSites: [
     {
       title: 'Gambling Quiz',

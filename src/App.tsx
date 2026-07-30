@@ -8,7 +8,7 @@ import { Header, About, Technologies, Contacts } from './components/';
 import { PortFolioSlider } from './components/common/';
 import { AppStateType } from './redux/store';
 import cn from 'classnames';
-import { getWebpackSites, getReactSites } from './redux/selectors/appSelectors';
+import { getWebpackSites, getReactSites, getWebSocketSites } from './redux/selectors/appSelectors';
 import { SitesType } from './redux/types/types';
 //@ts-ignore
 import AnimatedCursor from 'react-animated-cursor';
@@ -19,7 +19,7 @@ import 'aos/dist/aos.css';
 import { useTranslate } from 'react-redux-multilingual';
 
 const App: React.FC<MapStatePropsType & MapDispatchPropsType & ownProps> = React.memo(
-  ({ webpackSites, reactSites }) => {
+  ({ webpackSites, reactSites, fullstackSites }) => {
     const t = useTranslate();
 
     React.useEffect(() => {
@@ -43,6 +43,7 @@ const App: React.FC<MapStatePropsType & MapDispatchPropsType & ownProps> = React
         <Header />
         <About />
         <section id="portfolio" className={cn(portfStyles.portfolio)}>
+          <PortFolioSlider title={t('portfolio.websocketTitle')} sliderSites={fullstackSites} />
           <PortFolioSlider title={t('portfolio.reactTitle')} sliderSites={reactSites} />
           <PortFolioSlider title={t('portfolio.webpackTitle')} sliderSites={webpackSites} />
         </section>
@@ -56,12 +57,14 @@ const App: React.FC<MapStatePropsType & MapDispatchPropsType & ownProps> = React
 const mapStateToProps = (state: AppStateType) => ({
   webpackSites: getWebpackSites(state),
   reactSites: getReactSites(state),
+  fullstackSites: getWebSocketSites(state),
 });
 
 type MapStatePropsType = ReturnType<typeof mapStateToProps>;
 type MapDispatchPropsType = {
   webpackSites: Array<SitesType>;
   reactSites: Array<SitesType>;
+  fullstackSites: Array<SitesType>;
 };
 
 type ownProps = {

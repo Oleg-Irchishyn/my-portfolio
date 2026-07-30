@@ -26,10 +26,16 @@ const NextArrow = (props: any) => {
 };
 
 const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites, title}) => {
+  // Slide sizing (slidesToShow/centerMode/centerPadding) stays identical to
+  // every other slider. Only `infinite` loops by cloning slides to fill the
+  // row, which is what duplicated a single-item slider's only card — so it's
+  // disabled (along with autoplay/arrows, which have nothing to do without
+  // it) once there's nothing left to loop through.
+  const hasMultipleSlides = sliderSites.length > 1;
   var settings = {
     dots: false,
-    infinite: true,
-    autoplay: true,
+    infinite: hasMultipleSlides,
+    autoplay: hasMultipleSlides,
     autoplaySpeed: 10000,
     pauseOnHover: true,
     pauseOnFocus: true,
@@ -39,6 +45,7 @@ const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites, title}) =>
     centerPadding: '60px',
     swipe: true,
     draggable: false,
+    arrows: hasMultipleSlides,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
@@ -57,7 +64,7 @@ const PortFolioSlider: React.FC<ownProps> = React.memo(({sliderSites, title}) =>
       {title}
     </h3>
   )}
-  <Slider {...settings} className={cn('portfolio__list')}>
+  <Slider {...settings} className={cn('portfolio__list', { 'portfolio__list--no-arrows': !hasMultipleSlides })}>
 {
   sliderSites.map((item: SitesType, index) => {
     const {title, url} = item;
