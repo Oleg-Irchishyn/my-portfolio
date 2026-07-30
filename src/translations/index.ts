@@ -1,71 +1,71 @@
 export const translations = {
-    en: {
-      locale: 'en-US',
-      messages: {
-        headerNav: {
-            about: `About`,
-            porftfolio: `Portfolio`,
-            technologiesStack: `Technologies stack`,
-            contacts: `Contacts`
-        },
-        greetingsLine: {
-          first: `HI, Pleasure to meet you 👋`,
-          second: `I am Oleg, a Front-end developer with experience in Vanilla JS and ReactJS 💖`,
-          third: `Below, you may find more info about me and my projects 👇`,
-          fourth: `Hope, you will enjoy them 😎`,
-        },
-        aboutText: {
-          1: `Outsource company or a product one is not a concern to me.`,
-          2: `I am looking for the company, that would give me an opportunity to grow and learn.`,
-          3: ` The most important moment for me is communication within the development team and
-          clients.`,
-          4: `Bad management causes a lot of issues, as well as bad code.`,
-          5: `Whether I will be coding websites or web services, all I want is to sharpen my skills
-          and learn JS with ReactJS on real projects.`,
-          6: ` The end goal is to become an outstanding developer, who will participate in difficult
-          projects, which will bring profit to a company and satisfaction to me.`
-        },
-        contacts: {
-          profile: `profile`,
-          number: `Number:`
-        },
-        portfolio: {
-          webpackTitle: `Not fullstack — frontend-only landing pages, built with Webpack`,
-          reactTitle: `Fullstack projects, built with React.js + json-server`
-        }
-      }
+  en: {
+    locale: 'en-US',
+    messages: {
+      headerNav: {
+        about: `About`,
+        porftfolio: `Portfolio`,
+        technologiesStack: `Technologies stack`,
+        contacts: `Contacts`,
+      },
+      greetingsLine: {
+        first: `HI, Pleasure to meet you 👋`,
+        second: `I am Oleg, a Full stack developer with experience in React.js/Next.js and Node.js/Express.js/Nest.js 💖`,
+        third: `Below, you may find more info about me and my projects 👇`,
+        fourth: `Hope, you will enjoy them 😎`,
+      },
+      aboutText: {
+        1: `Whether it's an outsourcing company or a product company doesn't really matter to me.`,
+        2: `I am looking for a company that will give me the opportunity to strengthen my skills, learn, and grow.`,
+        3: `The most important thing for me is communication within the development team and
+          with clients.`,
+        4: `Poor management causes just as many problems as bad code.`,
+        5: `Whether I'm building web applications or web services, all I want is to sharpen my skills
+          and be a valuable asset to the team.`,
+        6: `I enjoy contributing to complex projects that bring profit to the company
+          and satisfaction to me, and I want to keep growing as a developer.`,
+      },
+      contacts: {
+        profile: `profile`,
+        number: `Number:`,
+      },
+      portfolio: {
+        webpackTitle: `Not fullstack — frontend-only landing pages, built with Webpack`,
+        reactTitle: `Fullstack projects, built with React.js + json-server`,
+      },
     },
-    uk: {
-      locale: 'uk',
-      messages: {
-        headerNav: {
-            about: 'Про себе',
-            porftfolio: `Портфоліо`,
-            technologiesStack: `Стек технологій`,
-            contacts: `Контакти`
-        },
-        greetingsLine: {
-          first: `Вітаю, радий знайомству 👋`,
-          second: `Мене звати Олег, я Фронт-Енд розробник із досвідом роботи з Vanilla JS та ReactJS 💖`,
-          third: `Нижче, ви можете дізнатись більше про мене та мої проекти 👇`,
-          fourth: `Сподіваюсь, вони вам сподобаються 😎`,
-        },
-        aboutText: {
-          1: `Аутсорс чи продуктова компанія не є надто важливим питанням для мене.`,
-          2: `Я шукаю компанію, що надасть мені змогу навчатися та рости як фахівцю.`,
-          3: `Найважливішим моментом для мене є комунікація між веб-розробниками та замовниками.`,
-          4: `Погана комунікація спричинює так само багато проблем, як і поганий код.`,
-          5: `Незалежно від того, чи я буду кодити веб-сервіси чи веб-сайти, все, чого я бажаю - це відточувати свої навички та надалі вивчати JS разом із ReactJS на реальних проектах.`,
-          6: `Кінцева мета - стати видатним розробником, який братиме участь у складних проектах, котрі приноситимуть дохід компанії та задоволення мені.`
-        },
-        contacts: {
-          profile: `профіль`,
-          number: `Номер:`
-        },
-        portfolio: {
-          webpackTitle: `Не Fullstack — фронтенд-лендінги, зібрані на Webpack`,
-          reactTitle: `Fullstack проєкти, зібрані на React.js + json-server`
-        }
-      }
-    }
-  }
+  },
+  uk: {
+    locale: 'uk',
+    messages: {
+      headerNav: {
+        about: 'Про себе',
+        porftfolio: `Портфоліо`,
+        technologiesStack: `Стек технологій`,
+        contacts: `Контакти`,
+      },
+      greetingsLine: {
+        first: `Вітаю, радий знайомству 👋`,
+        second: `Мене звати Олег, я Фул стек розробник із досвідом роботи з React.js/Next.js та Node.js/Express.js/Nest.js 💖`,
+        third: `Нижче, ви можете дізнатись більше про мене та мої проєкти 👇`,
+        fourth: `Сподіваюсь, вони вам сподобаються 😎`,
+      },
+      aboutText: {
+        1: `Аутсорсингова компанія чи продуктова — для мене не принципово.`,
+        2: `Я шукаю компанію, яка дасть мені можливість вдосконалювати навички, навчатися та розвиватися.`,
+        3: `Найважливіше для мене — це комунікація в команді розробників та з клієнтами.`,
+        4: `Погане управління спричиняє стільки ж проблем, скільки й поганий код.`,
+        5: `Незалежно від того, розроблятиму я веб-застосунки чи веб-сервіси, я хочу лише вдосконалювати свої навички та бути цінним учасником команди.`,
+        6: `Мені подобається брати участь у складних проєктах, що приносять прибуток компанії та задоволення мені, і я прагну й надалі розвиватися як розробник.`,
+      },
+      contacts: {
+        profile: `профіль`,
+        number: `Номер:`,
+      },
+      portfolio: {
+        webpackTitle: `Не Fullstack — фронтенд-лендінги, зібрані на Webpack`,
+        reactTitle: `Fullstack проєкти, зібрані на React.js + json-server`,
+      },
+    },
+  },
+};

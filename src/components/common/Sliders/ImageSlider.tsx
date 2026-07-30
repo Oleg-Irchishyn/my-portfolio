@@ -1,6 +1,8 @@
 import React from 'react';
 import imgFirst from '../../../assets/images/img_1.jpg';
 import imgSecond from '../../../assets/images/img_2.jpg';
+import imgThird from '../../../assets/images/img_3.jpg';
+import imgFourth from '../../../assets/images/img_4.jpg';
 import './styles/sliders.scss';
 import * as ReactSlick from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -31,6 +33,14 @@ const ImageSlider: React.FC = React.memo(() => {
       <div>
         {' '}
         <img src={imgSecond} alt="my images" />
+      </div>
+      <div>
+        {' '}
+        <img src={imgThird} alt="my images" />
+      </div>
+      <div>
+        {' '}
+        <img src={imgFourth} alt="my images" />
       </div>
     </Slider>
   );

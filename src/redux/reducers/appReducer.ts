@@ -4,13 +4,17 @@ import { AppStateType, InferActionsTypes } from './../store';
 import html5 from '../../assets/images/technologies/html5.png';
 import css3 from '../../assets/images/technologies/css3.png';
 import scss from '../../assets/images/technologies/scss.png';
-import bootstrap from '../../assets/images/technologies/bootstrap.png';
+import mui from '../../assets/images/technologies/mui.png';
 import js from '../../assets/images/technologies/js.png';
 import ts from '../../assets/images/technologies/ts.png';
 import react from '../../assets/images/technologies/react.png';
-import jquery from '../../assets/images/technologies/jquery.png';
+import next from '../../assets/images/technologies/next.png';
 import webpack from '../../assets/images/technologies/webpack.png';
 import git from '../../assets/images/technologies/git.png';
+import node from '../../assets/images/technologies/node.png';
+import express from '../../assets/images/technologies/Express.png';
+import nest from '../../assets/images/technologies/nest.png';
+
 const INITIALIZED_SUCCESS = 'PORTFOLIO/APP/INITIALIZED_SUCCESS';
 const SET_ACTIVE_LANG = 'PORTFOLIO/APP/SET_ACTIVE_LANG';
 
@@ -70,46 +74,58 @@ let initialState = {
   ] as Array<SitesType>,
   technologies: [
     {
-      title: 'html5',
-      image: html5
-    },
-    {
-      title: 'css3',
-      image: css3
-    },
-    {
-      title: 'scss',
-      image: scss
-    },
-    {
       title: 'javascript',
-      image: js
+      image: js,
     },
     {
-      title: 'reactJS',
-      image: react
+      title: 'react.js',
+      image: react,
     },
     {
       title: 'typescript',
-      image: ts
+      image: ts,
     },
     {
-      title: 'jquery',
-      image: jquery
+      title: 'next.js',
+      image: next,
+    },
+    {
+      title: 'node.js',
+      image: node,
+    },
+    {
+      title: 'express.js',
+      image: express,
+    },
+    {
+      title: 'nest.js',
+      image: nest,
+    },
+    {
+      title: 'html5',
+      image: html5,
+    },
+    {
+      title: 'css3',
+      image: css3,
+    },
+    {
+      title: 'scss',
+      image: scss,
     },
     {
       title: 'webpack',
-      image: webpack
+      image: webpack,
     },
     {
-      title: 'bootstrap',
-      image: bootstrap
+      title: 'material ui',
+      image: mui,
     },
     {
       title: 'git',
-      image: git
-    }
-  ]  as Array<TechnologiesType>
+      image: git,
+    },
+  ] as Array<TechnologiesType>,
 };
 
 const appReducer = (state = initialState, action: ActionsTypes): initialStateType => {
@@ -120,11 +136,11 @@ const appReducer = (state = initialState, action: ActionsTypes): initialStateTyp
         initialized: true,
       };
 
-      case SET_ACTIVE_LANG:
-        return {
-          ...state,
-          activeLang: action.payload,
-        };
+    case SET_ACTIVE_LANG:
+      return {
+        ...state,
+        activeLang: action.payload,
+      };
 
     default:
       return state;
@@ -132,8 +148,8 @@ const appReducer = (state = initialState, action: ActionsTypes): initialStateTyp
 };
 
 export const actions = {
-  initializedSuccess: () => ({ type: INITIALIZED_SUCCESS } as const),
-  setActiveLanguage: (lang: string) => ({ type: SET_ACTIVE_LANG, payload: lang } as const),
+  initializedSuccess: () => ({ type: INITIALIZED_SUCCESS }) as const,
+  setActiveLanguage: (lang: string) => ({ type: SET_ACTIVE_LANG, payload: lang }) as const,
 };
 
 export const initializeApp = () => (dispatch: ThunkDispatchType) => {

@@ -147,13 +147,21 @@
 
 
 .images_slideShow {
-    width: 40%;
-    flex: 1;
+    // Width scales with the container like before (adapts on resize), but is
+    // also capped relative to viewport height so a wide-and-short window
+    // can't force a mismatched (cropped) box — see .slick-list below.
+    // The % must stay at 40 (matching .os-host's fixed 60% width in
+    // scrollbars.scss) — going higher makes the row exceed 100% and
+    // wrap/stack even outside the sm-devices breakpoint.
+    width: clamp(210px, min(40%, 36vh), 390px);
+    flex: 0 1 auto;
     border-radius: 10px;
+    background: $color-black;
     box-shadow: 0px 0px 14px 2px $bg-secondary;
     transform: perspective(1500px) rotateY(22deg);
     .slick-slide {
         display: flex !important;
+        height: 100%;
         border-radius: 10px;
         &.slick-active {
             opacity: 0.5;
@@ -161,15 +169,25 @@
         }
         div {
             display: flex;
-            flex: 1;
+            width: 100%;
+            height: 100%;
             border-radius: inherit;
         }
     }
 
+    .slick-list,
+    .slick-track {
+        height: 100%;
+    }
+
+    .slick-list {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+    }
+
     img {
-        flex: 1;
-        max-width: 100%;
-        aspect-ratio: 3 / 2;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: inherit;
     }
