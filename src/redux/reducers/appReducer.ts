@@ -14,6 +14,7 @@ import git from '../../assets/images/technologies/git.png';
 import node from '../../assets/images/technologies/node.png';
 import express from '../../assets/images/technologies/Express.png';
 import nest from '../../assets/images/technologies/nest.png';
+import graphql from '../../assets/images/technologies/graphql.png';
 
 const INITIALIZED_SUCCESS = 'PORTFOLIO/APP/INITIALIZED_SUCCESS';
 const SET_ACTIVE_LANG = 'PORTFOLIO/APP/SET_ACTIVE_LANG';
@@ -106,6 +107,10 @@ let initialState = {
     {
       title: 'nest.js',
       image: nest,
+    },
+    {
+      title: 'graphql',
+      image: graphql,
     },
     {
       title: 'html5',
